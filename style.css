@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Crimson Text', serif;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 30px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: utb 2s;
+}
+.nav h1{
+    font-weight: 700;
+    font-size: 2em;
+    width: 40%;
+    margin: 20px;
+}
+.navigation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-90px);
+}
+.navigation li{
+    list-style: none;
+    margin: 0%;
+}
+.navigation li a{
+    margin-right: 0%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 15px ;
+    border-radius: 20px;
+    color: black;
+}
+.navigation li a:hover, .navigation li :active{
+    background-color:crimson;
+    color: white;
+
+}
+/*hero section*/
+#hero{
+    background-image: url(homepage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#hero .hero{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    justify-content: flex-start;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+
+
+
+}
+.cta:hover{
+    color: white;
+    background-color: crimson;
+}
+/* end hero section*/
+#hobbies *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+/*hobbies section*/
+#Hobbies{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0;
+    padding: 100px 0;
+    letter-spacing: .1.5rem;
+    background-color: whitesmoke;
+}
+
+#Hobbies .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+#Hobbies p{
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+
+
+
+/* end hobbies section*/
+
+/* photography section*/
+
+#photography .photography{
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: whitesmoke;
+}
+#photography .photography-header h1{
+    margin-bottom: 50px;
+}
+#photos .photography{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+#photography .photography-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+#photography .photography-info{
+    padding: 30px;
+    flex-basis: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+#photography .photography-info h1{
+    font-size: 4rem;
+    font-weight: 300;
+}
+#photography .photography-info h2{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+#photogrpahy .photography-image{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    
+}
+
+/*end photography section*/
+/* about section*/
+#about .about{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;    
+    background-color: whitesmoke;
+}
+#about .col-left{
+    width: 250px;
+    height: 360;
+    background-color: whitesmoke;
+}
+#about .col-right{
+    width:100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: whitesmoke;
+}
+#about .section-title{
+    margin: 0%;
+    background-color: whitesmoke;
+}
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: black;
+    background-color: whitesmoke;
+}
+#about .col-right p{
+margin-bottom: 30px;
+background-color: whitesmoke;
+}
+#about .col-right .cta{
+    color: black;
+    width: fit-content;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: whitesmoke;
+}
+#about .col-left .about-img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+#about .col-left .abou-img img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+    color: black;
+    background-color: whitesmoke;
+}
+/* end about section*/
+/* contact section*/
+#conact .contact{
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+#contact .contact-items{
+    width: 400%;
+    background-color: whitesmoke;
+}
+#contact .contact-items{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    background-color: whitesmoke;
+}
+#contact .contact-items:hover{
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#contact .contactinfo h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+}
+#contact .contactinfo h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+    background-color: whitesmoke;
+}
+/* end of contact section */
+
+/* keyframe */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100%{
+        color: black;
+    }
+}
+/*end key frame */

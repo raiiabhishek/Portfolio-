@@ -1,0 +1,136 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+background-color: transparent;
+}
+html{
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', defult;
+font-size: 15px;
+}
+
+a{
+text-decoration: none;
+background-color: white;
+padding: px 15px;
+margin-right: 0%;
+padding-right: 0%;
+
+}
+.container{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 0%;
+padding-right: 0%;
+}
+
+.hero{
+max-width: 1400px;
+margin: 0 auto;
+padding: 0 30px;
+justify-content: flex-start;
+margin-right: 0%;
+padding-right: 0%;
+}
+h1{
+display: block;
+width: fit-content;
+font-size: 2rem;
+position: relative;
+color: transparent;
+animation: text_reveal .5s ease forwards;
+animation-delay: 1.5s;
+margin-right: 0%;
+padding-right: 0%;
+}
+h1 span{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 0;
+background-color: crimson;
+animation: text_reveal_box 1s ease;
+animation-delay: 1s;
+margin-right: 0%;
+padding-right: 0%;
+}
+
+.cta{
+display: inline-block;
+padding: 10px 30px;
+color: black;
+background-color: transparent;
+border: 2px solid crimson;
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+margin-top: 30px;
+transition: .3s ease;
+transition-property: background-color, color;
+margin-right: 0%;
+padding-right: 0%;
+}
+a :link{
+    color: wheat;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+a:visited{
+    color: black;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: red;
+}
+.contact{
+    display: flex;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.contact-info{
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.icon{
+    margin-right: 0%;
+    padding-right: 0%;
+}
+
+.cta:hover{
+    color:white;
+background-color: crimson;
+}
+.info{
+    margin-right: 0%;
+    padding-right: 0%;
+}
+img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 0%;
+}
+/* keyframe */
+@keyframes text_reveal_box {
+50% {
+    width: 100%;
+    left: 0;
+}
+100% {
+    width: 0;
+    left: 100%;
+}
+}
+@keyframes text_reveal {
+100%{
+    color: black;
+}
+}
+/*end key frame */

@@ -1,0 +1,84 @@
+/* keyframe */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100%{
+        color: black;
+    }
+}
+/*end key frame */
+#photography .photography{
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: whitesmoke;
+}
+#photography .photography-header h1{
+    margin-bottom: 50px;
+}
+#photos .photography{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#photography .photography-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#photography .photography-info{
+    padding: 30px;
+    flex-basis: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+#photography .photography-info h1{
+    font-size: 4rem;
+    font-weight: 300;
+}
+#photography .photography-info h2{
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+p{
+    text-align: justify;
+}
+.photography-image{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 400px;
+    
+}
+*{
+    background-color: whitesmoke;
+}
+h1:hover{
+background-color: crimson;
+animation: text_reveal_box .5s ease forwards;
+    animation-delay: 1.5s;
+}
